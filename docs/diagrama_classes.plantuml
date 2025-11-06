@@ -1,0 +1,49 @@
+@startuml
+
+
+class Teacher{
+-name: CharField
+-email: EmailField
+}
+
+class Student{
+-name: CharField
+-email: EmailField
+-ra: CharField
+}
+
+class Preferences{
+-q1: CharFieldChoicesAaE
+-q2: CharFieldChoicesAaE
+-q3: CharFieldChoicesAaE
+-q4: CharFieldChoicesAaE
+-q5: CharFieldChoicesAaE
+-student: ForeignKeyStudent
+}
+
+class Content{
+-title: CharField
+-description: TextField
+-url: CharField
+-type: ForeignKeyCategory
+-teacher: ForeignKeyTeacher
+}
+
+class Type{
+ name: CharField
+ description: TextField
+}
+
+class Recommendetion{
+-studant: ForeignKeyStudent
+-content: ForeignKeyContent
+}
+
+
+Teacher --o Content
+Type --o Content
+Student --o Recommendetion
+Student --o Preferences
+Content --o Recommendetion
+
+@enduml
