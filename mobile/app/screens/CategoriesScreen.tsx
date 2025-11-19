@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList } from "react-native";
 import { apiGet } from "../../services/api";
-
+import { styles } from "../styles/Categories_styles";
 type Category = {
   id: number;
   name: string;
@@ -22,7 +22,7 @@ export default function CategoriesScreen() {
 
   return (
     <View style={{ padding: 20 }}>
-      <Text style={{ fontSize: 22, fontWeight: "bold" }}>Categorias</Text>
+      <Text style={styles.title}>Categoriass</Text>
 
       <FlatList
         data={data}

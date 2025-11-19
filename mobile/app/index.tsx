@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
 import { View, Text, StyleSheet } from "react-native";
+import { styles } from "./styles/Home_styles";
 
 export default function Home() {
   return (
@@ -16,20 +17,3 @@ export default function Home() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-  },
-  link: {
-    marginTop: 10,
-    fontSize: 18,
-    color: "blue",
-  },
-});
