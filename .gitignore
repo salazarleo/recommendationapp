@@ -1,5 +1,58 @@
-modeloapp/__pycache__/*
-/apps/categories/__pycache__/*
-/apps/categories/migrations/*
-/apps/products/__pycache__/*
-/apps/products/migrations/*
+# =========================================
+# DJANGO
+# =========================================
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+*.log
+
+# Django env
+.env
+.env.local
+*.env
+
+# =========================================
+# REACT NATIVE / EXPO
+# =========================================
+mobile/node_modules/
+mobile/.expo/
+mobile/.expo-shared/
+mobile/dist/
+mobile/web-build/
+mobile/expo-env.d.ts
+
+# Metro
+mobile/.metro-health-check*
+
+# Native generated folders
+mobile/android/
+mobile/ios/
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+
+app-example
+
+# =========================================
+# VS Code
+# =========================================
+.vscode/
+
+# =========================================
+# Python build artifacts
+# =========================================
+*.egg-info/
+build/
+dist/
